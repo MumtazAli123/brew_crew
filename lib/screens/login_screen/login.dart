@@ -83,6 +83,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 maxLength: 10),
             const SizedBox(height: 20,),
             ElevatedButton(onPressed: signUserIn, child: const Text('Login')),
+            Expanded( flex: 1,
+                child: Row(
+              children:  [
+                const Text('Before not a register ?'),
+                const Spacer(),
+                TextButton(onPressed: (){}, child: const Text('Register now'))
+              ],
+            ))
           ],
         ),
       ),
